@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat|Open+Sans|Raleway|Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  float: none;
+  font-family: "Open Sans", "Montserrat", "Roboto", "Raleway", sans-serif;
+  color: #fff;
+  list-style-type: none;
+  background: transparent;
+  border: none;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg");
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.__link {
+  color: #94d19c;
+  cursor: pointer;
+  transition: color 0.075s linear;
+}
+.__link:visited {
+  color: #94d19c;
+}
+.__link:hover {
+  color: #72e6e0;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 3px 1px #eee;
+  background-color: rgba(85, 85, 85, 0.4);
+  grid-template-columns: 10em 1fr;
+  grid-template-rows: 6em 2.5em 1fr 3.5em;
+  grid-template-areas: "header    header" "nav       nav" "aside     main" "footer    footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: rgba(238, 238, 238, 0.2);
+}
+.header .logoType .logo_img {
+  width: 2em;
+  height: 2em;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.__field {
+  box-shadow: 0 0 0 1px #eee;
+}
+
+.main {
+  grid-area: main;
+}
+.main .__product .product_image {
+  font-size: 10em;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.inline__list {
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */
