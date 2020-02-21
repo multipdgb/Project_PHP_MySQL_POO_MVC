@@ -1,0 +1,38 @@
+@mixin ___item__border ($border-weight, $border-color, $is-inline) {
+    @if $is-inline {
+        border-left: $border-weight solid $border-color;
+        border-right: $border-weight solid $border-color;
+
+        &:nth-child(1) {
+            border-left: none;
+        }
+
+        &:nth-last-child(1) {
+            border-right: none;
+        }
+    }
+
+    @else {
+        border-top: $border-weight solid $border-color;
+        border-bottom: $border-weight solid $border-color;
+
+        &:nth-child(1) {
+            border-top: none;
+        }
+
+        &:nth-last-child(1) {
+            border-bottom: none;
+        }
+    }
+}
+
+@mixin ___line ($border-weight, $border-color, $width) {
+    border: $border-weight solid $border-color;
+    width: $width;
+}
+
+@mixin ___hover_rotate($degrees) {
+    &:hover {
+        transform: rotate($degrees);
+    }
+}

@@ -1,0 +1,15 @@
+.__link{
+    $__link_color: #94d19c;
+    $__link_hover_color: #72e6e0;
+    color: $__link_color;
+
+    &:visited{
+        color: $__link_color;
+    }
+    &:hover{
+        color: $__link_hover_color;
+    }
+
+    cursor: pointer;
+    transition: color .075s linear;
+}

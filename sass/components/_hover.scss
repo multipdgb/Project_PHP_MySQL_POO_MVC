@@ -1,0 +1,11 @@
+.__hover {
+    transition: all .25s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.__hover__rotate_-5 {
+    @include ___hover_rotate(-5deg);
+}

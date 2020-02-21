@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat|Open+Sans|Raleway|Roboto&display=swap');
 
-*{
+@import 'components/mixins';
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,33 +17,21 @@
     border: none;
 }
 
-body{
+body {
     background-image: url("https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg");
     min-height: 100vh;
 
-    font-size: 16px;
-}
-.__link{
-    $__link_color: #94d19c;
-    $__link_hover_color: #72e6e0;
-    color: $__link_color;
-
-    &:visited{
-        color: $__link_color;
-    }
-    &:hover{
-        color: $__link_hover_color;
-    }
-
-    cursor: pointer;
-    transition: color .075s linear;
+    font-size: 15px;
 }
 
 @import 'components/container';
+@import 'components/hover';
 @import 'components/header';
 @import 'components/nav';
 @import 'components/aside';
 @import 'components/form';
 @import 'components/main';
 @import 'components/footer';
+@import 'components/lines';
 @import 'components/list';
+@import 'components/link';

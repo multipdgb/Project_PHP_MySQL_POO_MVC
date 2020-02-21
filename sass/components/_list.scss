@@ -1,6 +1,53 @@
 .__list{
-    
+    min-height: 100%;
+    min-width: 100%;
 }
 .inline__list{
     display: flex;
+
+    border-bottom: 1px solid #eee;
+
+    .__item{
+        flex-grow: 1;
+
+        @include ___item__border(.5px, #eee, true);
+    }
+}
+
+.__item{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    font-size: 1.1rem;
+
+    overflow: hidden;
+
+    .item__link{
+        $__link_color: #eee;
+        $__link_hover_color: #333;
+        color: $__link_color;
+
+        &:visited{
+            color: $__link_color;
+        }
+        &:hover{
+            color: $__link_hover_color;
+
+            background-color: rgba($color: #eee, $alpha: .2);
+        }
+
+        cursor: pointer;
+        transition: all .075s ease-in-out;
+        
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.__list_type_point{
+    list-style-type: square;
 }

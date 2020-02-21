@@ -1,0 +1,13 @@
+.__line {
+    width: 100%;
+    border: .5px solid #eee;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+}
+
+.__line__50 {
+    @include ___line(.5px, #eee, 50%);
+}
